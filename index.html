@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>AutoSender</title>
+  
+
+
+</head>
+
+<style>
+body{
+
+background-image: url('https://counselorsforblacklives.files.wordpress.com/2018/09/blm-fist.png');
+background-repeat: repeat;"
+}
+</style>
+
+<body>
+   
+  <script >
+    
+    
+
+    function sendMail(){
+        var addresses_arr = ['kabrahams@nassaucountyny.gov',
+'sbyone@nassaucountyny.gov ',
+'csolages@nassaucountyny.gov',
+'dford@nassaucountyny.gov ',
+'dmule@nassaucountyny.gov ',
+'cwgaylor@nassaucountyny.gov',
+'hkopel@nassaucountyny.gov',
+'vmuscarella@nassaucountyny.gov',
+'rnicolello@nassaucountyny.gov',
+'ebirnbaum@nassaucountyny.gov',
+'DDeriggiwhitton@nassaucountyny.gov',
+'jkennedy@nassaucountyny.gov',
+'tmckevitt@nassaucountyny.gov',
+'Lschaefer@nassaucountyny.gov',
+'JFerretti@attglobal.net',
+'adrucker@nassaucountyny.gov',
+'rwalker@nassaucountyny.gov',
+'JLafazan@nassaucountyny.gov',
+'SRhoads@nassaucountyny.gov','Rmcrae1@live.com', 'lcurran@nassaucountyny.gov','bobby@bobbykalotee.com' ];
+    var subject_raw = 'Demand For County to Denounce Protest Supression and White Supremacy in Nassau County';
+    var body_raw = `Earlier this week, Shari Einhorn of News12 LI tweeted out a video of merrick residents, draped in American flags, telling the peaceful protesters to "go home" or to “go back where they came from”. On Twitter, she captioned it "Community members followed them[the protesters], voicing their displeasure."  
+
+I do not identify with nor do I condone the people slinging hate speech to a peaceful protest as my community, or members of my community. And as far as rhetoric goes, calling blatant hate speech and micro-aggressions "voicing displeasures" is all too common for those who's solidarity is superficial and performative. I'm upset with how my community and how my county executive Laura Curran is portraying those white nationalists who simply must be denounced by the public. There is a difference between free speech and hate speech. If we are sympathetic to the cause of those who are racist, if we give them a public platform like the 2,000 retweets on News12’s twitter feed, we give them a platform where their ideals become valid. I do not want this for part of my community, nor do I think you would. 
+
+County executive Laura Curran has ignored all of our phone calls, emails, and questions during her live Facebook town halls about what she will do to stand with the protestors, and whether or not she denounced the white supremacists of Long Island. I want there to be infrastructure for the people of Long Island that holds people accountable and represents the values of real Long Islanders. I want there to be a discussion about ethical journalism at the local level.  I want there to be tangible action representing the solidarity with the back lives matter movement. Will you stand on the side of justice with us? 
+
+Thank you.
+    `;
+
+        var addresses = addresses_arr.join(',');
+        var subject = subject_raw.replace(/ /g,"%20");
+        var body = encodeURIComponent(body_raw)
+        window.location.href = "mailto:"+addresses+'?subject='+subject+'&body='+body;
+    }
+
+    window.onload = sendMail
+  
+  </script>
+</body>
+</html>
